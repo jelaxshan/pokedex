@@ -18,3 +18,17 @@ export const PokeContainer = styled.div`
   flex-direction: column;
   width: 15rem;
 `;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+`;
+
+export const Button = styled.button`
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  outline: none;
+  color: ${({ theme }) => theme.colors.text};
+  background: ${({ theme }) => theme.colors.body};
+`;

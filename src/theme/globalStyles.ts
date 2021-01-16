@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 interface FontSize {
+  xxxs: string;
   xxs: string;
   xs: string;
   sm: string;
@@ -29,6 +30,7 @@ interface MediaQueries {
 }
 
 export const fontSize: FontSize = {
+  xxxs: '0.75rem',
   xxs: '1rem',
   xs: '1.2rem',
   sm: '1.5rem',
