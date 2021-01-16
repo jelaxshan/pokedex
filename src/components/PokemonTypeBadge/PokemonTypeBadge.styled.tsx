@@ -7,4 +7,5 @@ export const PokemonBadge = styled.span<{ color: string }>`
   border-radius: 1rem;
   padding: 4px;
   margin-right: 0.5rem;
+  transition: width 5s ease-out;
 `;

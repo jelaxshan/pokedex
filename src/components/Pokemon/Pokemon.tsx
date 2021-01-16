@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import useSwr from 'swr';
 import { ResponseByPokemonNameAPI } from '../../types/types';
 import { fetcher } from '../../utils/fetcher';
+import { Spinner } from '../Loader/Spinner';
 import {
   PokemonHeading,
   PokemonName,
@@ -28,7 +29,7 @@ const Pokemon: React.FC<Props> = ({ url, name }) => {
   }
 
   if (!data) {
-    return <div>loading...</div>;
+    return <Spinner />;
   }
 
   return (

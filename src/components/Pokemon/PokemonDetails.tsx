@@ -17,6 +17,7 @@ import {
   UL,
   PokemonStat,
 } from './PokemonDetails.styled';
+import { Spinner } from '../Loader/Spinner';
 
 interface Props {
   url: string;
@@ -30,7 +31,7 @@ const PokemonDetails: React.FC<Props> = ({ url, name }) => {
     return <div>error</div>;
   }
   if (!data) {
-    return <div>loading...</div>;
+    return <Spinner />;
   }
 
   const types =

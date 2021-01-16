@@ -16,7 +16,7 @@ export const PokeContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 15rem;
+  width: 20rem;
 `;
 
 export const ButtonWrapper = styled.div`

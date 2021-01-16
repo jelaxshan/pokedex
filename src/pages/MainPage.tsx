@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import useSWR from 'swr';
+import { Spinner } from '../components/Loader/Spinner';
 import Pokemon from '../components/Pokemon/Pokemon';
 import { fetcher } from '../utils/fetcher';
 import {
@@ -43,7 +44,7 @@ const MainPage: React.FC = () => {
   }
 
   if (!data) {
-    return <div>...loading</div>;
+    return <Spinner />;
   }
 
   return (
