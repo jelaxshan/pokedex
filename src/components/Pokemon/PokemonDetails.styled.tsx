@@ -58,7 +58,7 @@ export const UL = styled.ul`
   padding: 0;
 `;
 
-export const Stat = styled.span`
+export const PokemonStat = styled.span`
   flex: 2;
   position: relative;
   margin-bottom: 0.25rem;
@@ -74,7 +74,7 @@ export const Overlay = styled.div`
   right: 0;
   height: 1rem;
 `;
-export const Bar = styled.div<{ color: string; amount: number }>`
+export const BarChart = styled.div<{ color: string; amount: number }>`
   width: ${({ amount }) => (amount / 150) * 100}%;
   height: 1rem;
   background: ${({ color }) => color};
@@ -87,6 +87,6 @@ export const Span = styled.span<{ fontsize: string }>`
   font-size: ${({ theme, fontsize }) => theme.fontSize[`${fontsize}`]};
 `;
 
-export const PokeStats = styled.div`
+export const PokeStatistics = styled.div`
   display: flex;
 `;

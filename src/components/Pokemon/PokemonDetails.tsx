@@ -10,12 +10,12 @@ import {
   PokemonImage,
   PokemonInformation,
   PokemonBadges,
-  PokeStats,
+  PokeStatistics,
   Span,
-  Stat,
   Overlay,
-  Bar,
+  BarChart,
   UL,
+  PokemonStat,
 } from './PokemonDetails.styled';
 
 interface Props {
@@ -56,15 +56,15 @@ const PokemonDetails: React.FC<Props> = ({ url, name }) => {
         </UL>
         {data.stats.map((stat) => (
           <div key={stat.stat.name}>
-            <PokeStats>
+            <PokeStatistics>
               <Span fontsize="xxxs">
                 <strong>{stat.stat.name}</strong>
               </Span>
-              <Stat>
+              <PokemonStat>
                 <Overlay />
-                <Bar color={'#CD5241'} amount={stat.base_stat} />
-              </Stat>
-            </PokeStats>
+                <BarChart color={'#CD5241'} amount={stat.base_stat} />
+              </PokemonStat>
+            </PokeStatistics>
           </div>
         ))}
       </PokemonInformation>
