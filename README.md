@@ -1,5 +1,11 @@
 # PokeDEX
 
+Normal:
+(![Image](./normal.png?raw=true)
+
+Darkmode:
+(![Image](./darkmode.png?raw=true)
+
 ### [Demo](https://fervent-meninsky-593061.netlify.app)
 
 ### Libraries
