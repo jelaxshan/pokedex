@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8ed942f9-31ff-46e3-b1fa-7eafe7a0d27c/deploy-status)](https://app.netlify.com/sites/fervent-meninsky-593061/deploys)
+
 # PokeDEX
 
 Normal:
